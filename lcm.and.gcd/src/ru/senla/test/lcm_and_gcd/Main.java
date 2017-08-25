@@ -10,7 +10,9 @@ public class Main {
 		System.out.println("input your second number:");
 		int secondNumber = input.nextInt();
 		GcdCalculator gcdCalculatedNumber = new GcdCalculator();
-		System.out.println(gcdCalculatedNumber.gcdCalculate(firstNumber, secondNumber));
+		System.out.println("your gcd number is: " + gcdCalculatedNumber.gcdCalculate(firstNumber, secondNumber));
+		LcmCalculator lcmCalculatedNumber = new LcmCalculator();
+		System.out.println("your gcd number is: " + lcmCalculatedNumber.lcmCalculate(firstNumber, secondNumber));
 		input.close();
 
 	}
