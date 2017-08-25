@@ -1,27 +1,27 @@
 package ru.senla.test.segments_intersection;
 
 public class TwoDimensionalCoordinate {
-	private double xCoordinate;
-	private double yCoordinate;
+	private int xCoordinate;
+	private int yCoordinate;
 	
-	public TwoDimensionalCoordinate(double xCoordinate, double yCoordinate){
+	public TwoDimensionalCoordinate(int xCoordinate, int yCoordinate){
 		this.setX(xCoordinate);
 		this.setY(yCoordinate);
 	}
 
-	public double getX() {
+	public int getX() {
 		return this.xCoordinate;
 	}
 
-	public double getY() {
+	public int getY() {
 		return this.yCoordinate;
 	}
 
-	public void setX(double xCoordinate) {
+	public void setX(int xCoordinate) {
 		this.xCoordinate = xCoordinate;
 	}
 
-	public void setY(double yCoordinate) {
+	public void setY(int yCoordinate) {
 		this.yCoordinate = yCoordinate;
 	}
 
