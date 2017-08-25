@@ -1,4 +1,4 @@
-package ru.senla.test.gcd_and_lcm;
+package ru.senla.test.lcm_and_gcd;
 
 public class GcdCalculator {
 	public int gcdCalculate(int firstNumber, int secondNumber) {

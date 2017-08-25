@@ -1,19 +1,17 @@
-package ru.senla.test.gcd_and_lcm;
+package ru.senla.test.lcm_and_gcd;
 
-import java.io.PrintWriter;
 import java.util.Scanner;
 
 public class Main {
 	public static void main(String[] args) {
+		System.out.println("input your first number:");
 		Scanner input = new Scanner(System.in);
-		PrintWriter output = new PrintWriter(System.out);
 		int firstNumber = input.nextInt();
+		System.out.println("input your second number:");
 		int secondNumber = input.nextInt();
 		GcdCalculator gcdCalculatedNumber = new GcdCalculator();
-		output.println(gcdCalculatedNumber.gcdCalculate(firstNumber, secondNumber));
-		// output.println(мой метод lcm с входными параметрами);
+		System.out.println(gcdCalculatedNumber.gcdCalculate(firstNumber, secondNumber));
 		input.close();
-		output.close();
 
 	}
 
