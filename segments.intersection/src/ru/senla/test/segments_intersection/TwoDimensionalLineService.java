@@ -29,11 +29,22 @@ public class TwoDimensionalLineService {
 
 			} else {
 				// line equation: ax + by - c = 0
-				double a1 = (firstLine.getEndingCoordinate().getY() - firstLine.getBeginningCoordinate().getY())
-						/ (firstLine.getEndingCoordinate().getX() - firstLine.getBeginningCoordinate().getX());
+				double a1;
+				if (firstLine.getEndingCoordinate().getX() != firstLine.getBeginningCoordinate().getX()) {
+					a1 = (double)(firstLine.getEndingCoordinate().getY() - firstLine.getBeginningCoordinate().getY())
+							/ (double)(firstLine.getEndingCoordinate().getX() - firstLine.getBeginningCoordinate().getX());
+				} else {
+					a1 = 0;
+				}
 				double b1 = firstLine.getBeginningCoordinate().getY() - a1 * firstLine.getBeginningCoordinate().getX();
-				double a2 = (secondLine.getEndingCoordinate().getY() - secondLine.getBeginningCoordinate().getY())
-						/ (secondLine.getEndingCoordinate().getX() - secondLine.getBeginningCoordinate().getX());
+				double a2;
+				if (secondLine.getEndingCoordinate().getX() != secondLine.getBeginningCoordinate().getX()) {
+					a2 = (double)(secondLine.getEndingCoordinate().getY() - secondLine.getBeginningCoordinate().getY())
+							/ (double)(secondLine.getEndingCoordinate().getX() - secondLine.getBeginningCoordinate().getX());
+				} else {
+					a2 = 0;
+				}
+
 				double b2 = secondLine.getBeginningCoordinate().getY()
 						- a1 * secondLine.getBeginningCoordinate().getX();
 				if (a1 == a2) {
